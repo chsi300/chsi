@@ -307,12 +307,97 @@ document.addEventListener('DOMContentLoaded', function () {
             延长验证有效期
         </a> <a href="https://www.chsi.com.cn/xlcx/tbsm.jsp" target="_self" class="ivu-menu-item">
             特别声明
-        </a></ul> <div class="zxyz-zygz-box"><h2>重要告知</h2> <ul class="zygz-list"><li><a href="https://www.chsi.com.cn/zxyz/202305/20230517/2286956491.html" target="_blank" class="news-name">关于调整学籍/学历/学位在线验证报告翻译件和学位认证报告翻译件的说明</a> <div class="news-date">2023-05-18</div></li></ul></div></div> <div class="m_s_r"><div class="m_cnt_m"><h4 class="main_title margin-top-17">
+        </menu-item>
+    </i-menu>
+    <div class="zxyz-zygz-box">
+        <h2>重要告知</h2>
+        <ul class="zygz-list">
+            <li>
+                <a class="news-name" href="/zxyz/202305/20230517/2286956491.html" target="_blank">关于调整学籍/学历/学位在线验证报告翻译件和学位认证报告翻译件的说明</a>
+                <div class="news-date">2023-05-18</div>
+            </li>
+        </ul>
+    </div>
+</div>
+                <div class="m_s_r">
+                    <div class="m_cnt_l zxyz-page">
+                        <div class="zxyz_top_wrap">
+                            <h4 class="main_title">学籍/学历/学位在线验证报告查询</h4>
+                            <div class="chooseLan zxyzChooseLan">
+                                
+                                    
+                                    
+                                        报告语种
+                                        <a href="/xlcx/bg.do?vcode=AUXA19PXAV6S7PBS&lang=CN&amp;srcid=pdf" class="current">中文</a>
+                                        <a href="javascript:;" id="openerHref">英文</a>
+                                        <div id="noenreport" title="申请英文版">
+                                            <span class="noenreportArrow"></span>
+                                            <a href="#" class="newLayerClose" title="关闭"></a>
+                                            该备案表尚无对应的翻译件（英文），您可登录<a href="https://my.chsi.com.cn/archive/index.jsp#zxyz" target="_blank" style="color:#06C;margin-left: 0;">学信档案</a>进行申请。
+                                        </div>
+                                    
+                                
+                            </div>
+                        </div>
                         
-                            学籍/学历/学位在线验证报告查询
-                        
-                        
-                    </h4> <img src="验证报告.png" alt="封面" style="max-width:100%;height:auto;display:block;margin:0 auto"></div></div></div>
+
+
+
+
+
+      
+        <div class="printBG clearfix">                             
+            <a class="iconClick iconPrint" id="bindGA_print"  href="javascript:;" title="打印">&nbsp;</a>
+            <a class="iconClick iconDownload" id="bindGA_download" href="javascript:;" title="下载">&nbsp;</a>
+            <a class="iconClick iconEmail" id="showEmail" href="#" title="发送">&nbsp;</a>
+            <a class="iconClick iconXxewm" id="openxxewm" href="#" title="学信二维码">&nbsp;</a>
+            <div class="newLayer bgdy_newLayer" id="bgdy" style="padding-bottom: 13px">
+                <span class="newLayerArrow" style="right:116px;"></span>
+                <a href="#" class="newLayerClose" title="关闭"></a>
+                <div class="alignC">
+                    <img src='https://t4.chei.com.cn/chsi/images/yzbg/2022/xlbg_sample_s.jpg' alt="报告样本" width='80' /><br />
+                    <a  class="bindGA colorBlue" onclick="bgTopClick('print','onlinereport','cn')" href="javascript:;" title="打印报告" >打印报告</a><br />
+                    <a  href="/report/xueli/survey.do?vcode=AUXA19PXAV6S7PBS" onmousedown="bgTopClick('print_zysurvey','onlinereport','cn')" title="问卷调查" target="_blank" class="dcwjA">调查</a>
+                </div>
+            </div>
+            <div class="newLayer bgxz_newLayer" id="bgxz" style="padding-bottom: 13px">
+                <span class="newLayerArrow" style="right:77px;"></span>
+                <a href="#" class="newLayerClose" title="关闭"></a>
+                <div class="alignC">
+                    <img src='https://t4.chei.com.cn/chsi/images/yzbg/2022/xlbg_sample_s.jpg' alt="报告样本" width='80' /><br />
+                    <a  class="bindGA colorBlue" onmousedown="bgTopClick('download_pdf','onlinereport','cn')"  href="file/中国高等教育学位在线验证报告_毕志满.pdf" title="打印报告" download="中国高等教育学位在线验证报告_毕志满.pdf">下载报告</a><br />
+                    <a href="/report/xueli/survey.do?vcode=AUXA19PXAV6S7PBS"  onmousedown="bgTopClick('download_zysurvey','onlinereport','cn')"title="问卷调查" target="_blank" class="dcwjA">调查</a>
+                </div>
+            </div>
+            <div class="newLayer" id="emailBox">
+                <span class="newLayerArrow" style="right:37px;"></span>
+                <a href="#" class="newLayerClose" title="关闭"></a>
+                <table border="0" cellpadding="0" cellspacing="6">
+                    <tr>
+                        <td align="left" colspan="2">发送报告到指定邮箱：</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="toEmail" class="input_text input_t_l" id="toEmail" value="" /></td>
+                        <td><input type="button" value="发送" class="btn_blue" onclick="bgTopClick('email','onlinereport','cn')" id="emailButton" /></td>
+                    </tr>
+                    <tr>
+                        <td align="left" colspan="2"><span id="emailMsg">&nbsp;</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="newLayer" id="xxewm" title="学信二维码">
+                <span class="newLayerArrow" style="right:5px;"></span>
+                <a href="#" class="newLayerClose" title="关闭"></a>
+                <div class="alignC">
+                    <img src="/report/img/e07645342e154358731c444346700f3258d0901970.jpg" alt="学信二维码" /><br />
+                    <a target="_blank" class="bindGA colorBlue" onmousedown="bgTopClick('download_barcode','onlinereport','cn')" href="/xlcx/downloadxxewm.do?id=07645421545873144346703258090197&amp;ln=CN">下载</a>
+                </div>
+            </div>
+        </div>   
+        <div id="resultTable"></div>   
+
+
+			<img src="images/验证报告.png" alt="封面" style="max-width:100%;height:auto;display:block;margin:0 auto"></div></div></div>
     </div>
     <div class="flex-base">
         
@@ -481,6 +566,169 @@ window.addEventListener('load', function () {
                 }  
             }
         });
+    </script>
+<script type="text/javascript">
+   var chsiApp =   new Vue({
+        el: '#app',
+        data: {
+            activeName : 'zxyz_bgcx'
+        },
+        mounted: function () {
+            if(document.getElementById("appLoading")){
+                document.getElementById("appLoading").style.display = "none";
+            }            
+        }
+    });
+</script>
+<script>
+    function gaFun(type,reportType,lang){
+        // ga事件参数设置，参考：http://jira.chsi.com.cn/wiki/pages/viewpage.action?pageId=8651194
+        gtag('event', type, {
+            'event_category': reportType,
+            'event_label': lang,
+            'value': '1'
+        });
+    }
+    //打印
+    function doPrint(){
+        var str = '<!DOCTYPE html><html><head>';
+        str += '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+        str += '<title>'+document.title+'</title>';
+        str += '<link rel="shortcut icon" href="https://t1.chei.com.cn/chsi/favicon.ico" type="image/x-icon" />';
+        str += '<link href="https://t1.chei.com.cn/chsi/css/report/zxyz_bg.css?v=202350707" rel="stylesheet">';
+        str += '<link href="https://t4.chei.com.cn/chsi/css/report/dy_report.css" rel="stylesheet" />';
+        str +='</head>';
+        str +='<body onload="window.print()">'+document.getElementById("resultTable").innerHTML + '</body></html>';
+        w = window.open("", "", "");
+        w.document.write(str);
+        w.document.close();
+    }
+    function bgTopClick(type,reportType,lang){
+        //在线验证右上角4个操作事件
+        //type：print/download_pdf/email/download_barcode
+         //reportType : onlinereport_xj onlinereport onlinereport_xw
+        // curLang  ： cn  en
+        if(type=='print'){
+            doPrint();
+        }
+        if(type=='email'){
+            sendEmail("/report/xueli/email.do?vcode=AUXA19PXAV6S7PBS&amp;rid=07645421545873144346703258090197&amp;ln=cn&amp;s=1e1417730ef0fee422b8a369234d82b8&amp;t=1754930446904",lang)
+        }
+        gaFun(type,reportType,lang);
+    } 
+    function sendEmail(emailHref,lang){
+        $('#emailMsg').html("");
+        var toEmail = $.trim($("#toEmail").val());
+        if(toEmail.length==0){
+            var _tips = lang=="cn"?"<span class='colorRed'>请输入您的邮箱！</span>":"<span class='colorRed'>Enter your e-mail address.</span>";  
+            $('#emailMsg').html(_tips);
+            return ;
+        }
+        if(!toEmail.match(regMail)){
+            var _tips  = lang=="cn"?"<span class='colorRed'>邮箱格式不正确，请重新输入！</span>":"<span class='colorRed'>The address was not recognized.</span>"; 
+            $('#emailMsg').html(_tips);
+            return ;
+        }
+        document.getElementById("emailButton").disabled = true;  // 按钮失效
+        $("#emailButton").addClass("btn_blue_disable");
+        var _tips = lang=="cn"?"邮件发送中......":"Sending ......";
+        $('#emailMsg').html(_tips);
+        
+        var _url = emailHref.replace(/\&amp;/g, '&') + "&toEmail=" + toEmail;
+        $.ajax({  
+            type : "POST", 
+            url : _url,
+            data : {},
+            dataType: "json",
+            success : function(result) {//返回数据根据结果进行相应的处理  
+                if(lang=="cn"){
+                    document.getElementById("emailButton").disabled = false;  // 按钮有效
+                    $("#emailButton").removeClass("btn_blue_disable");
+                    if(result.status==0){
+                        $("#emailMsg").html("邮件发送成功，请注意查收！");
+                    }else{
+                        if(result.message === "fail"){
+                            $("#emailMsg").html("<span class='colorRed'>邮件发送失败，请重新发送！</span>");
+                        }else if(result.message === "canNotReceiveCNReport"){
+                            $("#emailMsg").html("该邮箱只接收英文报告，当前中文报告禁止发送！");
+                        }
+                    }
+                }else{                    
+                    $("#emailButton_en").removeClass("btn_blue_disable");
+                    if(result.status==0){
+                        $("#emailMsg").html("Your message has been sent.");
+                    }else{
+                        $("#emailMsg").html("<span class='colorRed'>Mail delivery failed, please try again later. </span>");
+                    }
+                }
+            }  
+        });  
+    }
+$(function() {
+    $("#bindGA_print").click(function(){
+        $("#bgdy").toggle();
+        $("#bgxz").hide();
+        $("#emailBox").hide();
+        $("#xxewm").hide();
+        $("#noenreport").hide();
+        return false;
+    }); 
+    $("#bindGA_download").click(function(){
+        $("#bgxz").toggle();
+        $("#bgdy").hide();
+        $("#emailBox").hide();
+        $("#xxewm").hide();
+        $("#noenreport").hide();
+        return false;
+    });
+    $("#showEmail").click(function(){
+        $("#emailBox").toggle();
+        $("#bgxz").hide();//学历的报告下载出的层
+        $("#bgdy").hide();//学历的报告打印出的层
+        $("#xxewm").hide();
+        $("#noenreport").hide();
+        return false;
+    });
+    $("#openxxewm").click(function(){
+        $("#xxewm").toggle();
+        $("#bgxz").hide();
+        $("#bgdy").hide();
+        $("#emailBox").hide();
+        $("#noenreport").hide();
+        return false;
+    });
+    $(".newLayerClose").click(function(){
+        $(this).parent("div").hide();
+        return false;
+    }); 
+    
+    $("#showEmailEn").click(function(){
+        $("#emailBoxEn").toggle();
+        $("#xxewmEn").hide();
+        return false;
+    });
+    $("#openxxewmEn").click(function(){
+        $("#xxewmEn").toggle();
+        $("#emailBoxEn").hide();
+        return false;
+    });
+    $(".newLayerClose").click(function(){
+        $(this).parent(".newLayer").hide();
+        return false;
+    });
+    $("#openerHref").click(function(){
+        $("#noenreport").toggle();
+        $("#bgxz").hide();
+        $("#bgdy").hide();
+        $("#xxewm").hide();
+        $("#emailBox").hide();
+        return false;
+    }); 
+}); 
+</script>
+
+    <script>
+        chsiApp.reportType = 'onlinereport'
     </script>
 
 </body></html>
